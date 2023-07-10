@@ -47,3 +47,8 @@ monitor clusters
 localhost;8088
 
 
+hdfs  dfs -mkdir input
+hdfs  dfs -put  etc/hadoop/* input/
+
+>  hadoop jar   share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.2.jar grep input output 'dfs[a-z.]+'
+
