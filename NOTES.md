@@ -52,3 +52,16 @@ hdfs  dfs -put  etc/hadoop/* input/
 
 >  hadoop jar   share/hadoop/mapreduce/hadoop-mapreduce-examples-2.10.2.jar grep input output 'dfs[a-z.]+'
 
+
+## Replication
+
++ Replication blocks based on the replication factor
++ Store replicas in different locations
+
+Choosing Replica Locations
+
+Maximize redundancy 
+Minimize write bandwidth
+
+
+
