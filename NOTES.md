@@ -63,5 +63,26 @@ Choosing Replica Locations
 Maximize redundancy 
 Minimize write bandwidth
 
+Block cache
+
+
+Metadata Files
+    fsimage  - A snapshot of the complete file system at start up, load into memory
+
+    edits
+	
+default backup location  on Name node local file system
+
+Configure the Backup Location
+
+Set the property 
+dfs.namenode.name.dir in hdfs-site.xml
+
+$path1, $path2,$path3
+A comma separated list of paths
+
+Merging these files is very compute heavy
+Bringing a system back online could take a long time
+SecondNameNode
 
 
