@@ -86,3 +86,18 @@ Bringing a system back online could take a long time
 SecondNameNode
 
 
+Configure the checkpoint Frequency
+
+
+Set properties in hdfs-site.xml
+
+ specified the Number of seconds between each checkpointo
+
+dfs.namenode.checkpoint.period
+
+specified the period when the secondary name node polls the name node for uncheckpointed transactions
+
+dfs.namenode.checkpoint.check.period 
+
+specified the number of transactions(edits to the file system) before checkpointingo
+dfs.namenode.checkpoint.txns 
